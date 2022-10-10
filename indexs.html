@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>zomato</title>
+        <link rel="shortcut icon"href=" https://b.zmtcdn.com/images/logo/zomato_logo_2017.png" type="image/x-icon">
+        <link rel="stylesheet" href="C:\Users\MOHAN PRAVEEN K\Desktop\html code\zomato\style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    </head>
+    <body>
+          <header>
+            <div class="nav">
+                <div>
+                <p>get the app</p>
+
+            </div>
+                <ul class="nav-bar">
+                    <li>investor relations</li>
+                    <li>add restraurant</li>
+                    <li>login </li>
+                    <li>sign up</li>
+                </ul>
+            </div>
+            <div class="head">
+                <img class="logo" src=" https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png" alt="">
+                <h3>discover the best food and drinks in pollachi</h3>
+                <div class="search"> 
+                    <div class="search-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>pollachi</p>
+                    </div>
+                    <div class="search-item">
+                        <i class="fas fa-search"></i>
+                        <input type="text"placeholder="search for restraurant,cuisine or a dish">
+                    </div>
+                </div>
+                <div class="header-image">
+                    <img src="https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png" alt="">
+                </div>
+            </div>
+          </header>
+          <section class="section-1">
+            <div class="section-1-item">
+                <div class="items-details"><p>Order Food Online</p></div>
+                <img src="https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*
+                " alt="">
+            </div>
+            <div class="section-1-item">
+                <div class="items-details"><p>Dining Out</p></div>
+                <img src="https://b.zmtcdn.com/webFrontend/d026b357feb0d63c997549f6398da8cc1647364915.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*
+                " alt="">
+            </div>
+            <div class="section-1-item">
+                <div class="items-details"><p>Nightlife & Club</p></div>
+                <img src="https://b.zmtcdn.com/webFrontend/d9d80ef91cb552e3fdfadb3d4f4379761647365057.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*
+                " alt="">
+            </div>
+        </section>
+    <!-- Collections -->
+	<section class="container">
+		<h1>Collections</h1>
+		<div class="collections">
+			<p>Explore the top best places in pollachi</p>
+			<a href="#">All collections in pollachi <i class="fa fa-caret-right"></i></a>
+		</div>
+		<div class="collection-grid">
+			<div class="collection-box">
+				<img src="https://www.sharmispassions.com/wp-content/uploads/2020/02/Entrance8.jpg">
+				<div class="collection-title">
+					<h3>Best of pollachi</h3>
+					<p>220 Places <i class="fa fa-caret-right"></i></p>
+				</div>
+			</div>
+			<div class="collection-box">
+				<img src="https://wallpaperaccess.com/full/2882814.jpg">
+				<div class="collection-title">
+					<h3>pure veg</h3>
+					<p>30 Places <i class="fa fa-caret-right"></i></p>
+				</div>
+			</div>
+			<div class="collection-box">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKYa_uJGrWdU8vajg0p6NDO-jPPOVqYF6wAsXUEDlzecZAN7sQNFAWpb5QXRGxRmZnLCQ&usqp=CAU">
+				<div class="collection-title">
+					<h3>Newly opened cafe</h3>
+					<p>7 Places <i class="fa fa-caret-right"></i></p>
+				</div>
+			</div>
+			<div class="collection-box">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT3dKWXLaXK-nSvWzNbwAb0lT43dOuXMQwJQ&usqp=CAU">
+				<div class="collection-title">
+					<h3>non veg</h3>
+					<p>19 Places <i class="fa fa-caret-right"></i></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<style>
+	.collections {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 30px;
+	}
+	.collections p{
+		font-size: 18px;
+	}
+	.collections a{
+		font-size: 16px;
+		color: #f57082;
+		text-decoration: none;
+	}
+	.collections .fa-caret-right{
+		margin-left: 10px;
+	}
+	.collection-grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 10px;
+		margin-bottom: 100px;
+	}
+	.collection-grid .collection-box {
+		position: relative;
+	}
+	.collection-grid .collection-box img {
+		width: 100%;
+		border-radius: 8px;
+	}
+	.collection-grid .collection-box .collection-title {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		padding: 10px 15px;
+	}
+	.collection-grid .collection-box .collection-title h3 {
+		font-weight: 500;
+		color: #fa1f1fe2;
+	}
+	.collection-grid .collection-box .collection-title p {
+		color: rgb(246, 65, 65);
+	}
+	</style>
+        <!-- SECTION 2 -->
+        <section class="section-2">
+            <div class="section-2-heading">
+                <p>Popular localities in and around pollachi</p>
+            </div>
+            <div class="section-2-container">
+                <div class="section-2-items">
+                    <div class="section-2-item">
+                        <p class="item-head">pollachi</p>
+                        <p class="item-subhead">30 Places</p>
+                    </div>
+                    <div class="section-2-item">
+                        <p class="item-head">kottampatti</p>
+                        <p class="item-subhead">10 Places</p>
+                    </div>
+                    <div class="section-2-item">
+                        <p class="item-head">udumalai</p>
+                        <p class="item-subhead">10 Places</p>
+                    </div>
+                    <div class="section-2-item">
+                        <p class="item-head">chinnampalayam</p>
+                        <p class="item-subhead">25 Places</p>
+                    </div>
+                    <div class="section-2-item">
+                        <p class="item-head">aachi patti </p>
+                        <p class="item-subhead">12 Places</p>
+                    </div>
+                    <div class="section-2-item">
+                        <p class="item-head">panikampatti</p>
+                        <p class="item-subhead">10 places</p>
+                    </div>
+                    <div class="section-2-item">
+                        <p class="item-head">sakthi mill</p>
+                        <p class="item-subhead">50 places</p>
+                    </div>
+                    <div class="section-2-item">
+                        <p class="item-head">pollachi</p>
+                        <p class="item-subhead">30 Places</p>
+                    </div>
+                    <div class="section-2-item">
+                        <p class="item-head">sai baba colony</p>
+                        <p class="item-subhead">32 Places</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    
+    
+	<!-- Get zomato app -->
+	<section class="zom-app">
+		<img src="https://b.zmtcdn.com/data/o2_assets/a500ffc2ab483bc6a550aa635f4e55531648107832.png" alt="">
+		<div class="zom-app-right">
+			<h1>Get the Zomato App</h1>
+			<p>We will send you a link, open it on your phone to download the app</p>
+			<div class="radio-btn">
+				<label for="email"><input type="radio" id="email" name="app" value="email">Email</label>
+				<label for="phone"><input type="radio" id="phone" name="app" value="phone">Phone</label>
+			</div>
+			<div class="email-phone">
+				<input type="text" placeholder="Email">
+				<a class="btn-share" href="#">Share App Link</a>
+			</div>
+			<p class="small-text"><small>Download app from</small></p>
+			<div class="app-store">
+				<div class="app-image">
+					<img src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png" alt="">    
+				</div>
+				<div class="app-image"> 
+                        <img src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<style>
+.zom-app {
+	background-color: #FFFBF7;
+	margin: 100px auto;
+	padding-top: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.zom-app img {
+	height: 450px;
+}
+
+.zom-app .zom-app-right {
+	margin-left: 50px;
+	width: 450px;
+}
+
+.zom-app .zom-app-right h1{
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+
+.zom-app .zom-app-right p{
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+.zom-app-right .radio-btn {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	width: 50%;
+	padding-right: 50px;
+	margin-bottom: 20px;
+}
+
+.zom-app-right .radio-btn input[type="radio"] {
+	transform: scale(1.5);
+	margin-right: 10px;
+}
+
+.zom-app-right .email-phone {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.zom-app-right input[type="text"] {
+	padding: 13px 12px;
+	border-radius: 8px;
+	border: 1px solid #cfcfcf;
+	margin-right: 10px;
+}
+
+.zom-app-right a.btn-share {
+	color: #fff;
+	background-color: #ed5a6b;
+	border-radius: 8px;
+	padding: 13px 12px;
+	text-decoration: none;
+}
+
+.zom-app-right a.btn-share:hover {
+	background-color: #ec4654;
+}
+
+.zom-app-right .app-store {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.zom-app-right p.small-text {
+	color: #9c9c9c;
+	margin-top: 20px;
+}
+
+.zom-app-right .app-store .app-image {
+	margin-right: 20px;
+}
+
+.zom-app-right .app-store img {
+	width: 137px;
+	height: 40px;
+}
+
+</style>
+    </body>
+    <!-- Footer -->
+	<section class="footer-bar">
+		<div class="container">
+			<div class="footer-lang">
+				<img class="footer-logo" src="images/zomato-black-logo.webp">
+				<div class="btn-lang-top">
+					<a class="lang-btn" href="#"><img src="images/india-flag.jpg" height="13px"> India <small><i class="fa fa-chevron-down"></i></small></a>
+					<a class="lang-btn" href="#"> <i class="fa fa-globe"></i> English <small><i class="fa fa-chevron-down"></i></small></a>
+				</div>
+			</div>
+			<div class="footer-last-links">
+				<ul>
+					<li><h4 class="footer-list-title">COMPANY</h4></li>
+					<li><a href="#">Who We Are</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Careers</a></li>
+					<li><a href="#">Report Fraud</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">Financial Information</a></li>
+				</ul>
+				<ul>
+					<li><h4 class="footer-list-title">FOR FOODIES</h4></li>
+					<li><a href="#">Code of Conduct</a></li>
+					<li><a href="#">Community</a></li>
+					<li><a href="#">Blogger Help</a></li>
+					<li><a href="#">Mobile Apps</a></li>
+				</ul>
+				<ul>
+					<li><h4 class="footer-list-title">FOR RESTAURANTS</h4></li>
+					<li><a href="#">Add Restaurant</a></li>
+					<li><a href="#">Claim your Listing</a></li>
+					<li><a href="#">Business App</a></li>
+					<li><a href="#">Restaurant Widgets</a></li>
+					<li><a href="#">Product Businesses</a></li>
+				</ul>
+				<ul>
+					<li><h4 class="footer-list-title">FOR YOU</h4></li>
+					<li><a href="#">Privacy</a></li>
+					<li><a href="#">Terms</a></li>
+					<li><a href="#">Security</a></li>
+					<li><a href="#">Sitemap</a></li>
+				</ul>
+				<div>
+					<h4 class="footer-list-title">SOCIAL LINKS</h4>
+					<div class="footer-social-icons">
+						<a href="#"><i class="fab fa-facebook"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+					</div>
+					<div>
+						<img src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png" width="137px">
+						<img src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png" width="137px">
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<p><small>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2021 © Zomato™ Ltd. All rights reserved.</small></p>
+			</div>
+		</div>
+		
+	</section>
+    <style>
+        .footer-links {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	margin-top: 30px;
+	margin-bottom: 100px;
+}
+.footer-links ul li{
+	list-style: none;
+	margin-bottom: 20px;
+}
+.footer-links ul li a {
+	font-size: 16px;
+	color: #828282;
+	text-decoration: none;
+}
+.footer-links ul li a:hover {
+	color: #363636;
+}
+.footer-links ul li a.last-link {
+	color: #1c1c1c;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #1c1c1c;
+	font-weight: 600;
+}
+/*Footer bar*/
+.footer-bar {
+	background-color: #F8F8F8;
+	padding-top: 50px;
+}
+.footer-bar .footer-lang {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+.footer-bar .footer-lang img.footer-logo {
+	height: 28px;
+}
+.footer-bar .footer-lang a.lang-btn {
+	text-decoration: none;
+	font-size: 16px;
+	color: #1c1c1c;
+	padding: 8px 5px;
+	border: 1px solid #b5b5b5;
+	border-radius: 8px;
+	margin-right: 15px;
+}
+.footer-bar .footer-last-links {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+.footer-bar .footer-last-links ul li{
+	list-style: none;
+	margin-bottom: 5px;
+}
+.footer-bar .footer-last-links h4.footer-list-title {
+	margin-bottom: 10px;
+	letter-spacing: 0.2rem;
+	font-size: 14px;
+}
+.footer-bar .footer-last-links ul li a {
+	text-decoration: none;
+	color: #696969;
+	font-size: 14px;
+}
+.footer-bar .footer-last-links ul li a:hover {
+	color: #1c1c1c;
+}
+.footer-bar .footer-last-links .footer-social-icons {
+	margin-bottom: 20px;
+}
+.footer-bar .footer-last-links .footer-social-icons a {
+	color: #1c1c1c;
+}
+.footer-bar .footer-last-links .footer-social-icons .fa-facebook,
+.footer-bar .footer-last-links .footer-social-icons .fa-twitter,
+.footer-bar .footer-last-links .footer-social-icons .fa-instagram {
+	font-size: 20px;
+	margin-right: 5px;
+}
+.footer-bar .footer-copyright {
+	padding-top: 20px;
+	padding-bottom: 30px;
+	border-top: 1px solid #cfcfcf;
+}
+/*Mobile View*/
+@media(max-width: 500px) {
+	.showcase {
+		height: 500px;
+	}
+	.hero-text .search-bar {
+		width: 100%;
+	}
+	.search-3 {
+		display: none;
+	}
+	.order-cat {
+	grid-template-columns: repeat(2, 1fr);
+	}
+	.collections {
+	flex-direction: column;
+	justify-content: center;
+	}
+	.collection-grid {
+	grid-template-columns: repeat(2, 1fr);
+	}
+	.locals-grid {
+	grid-template-columns: repeat(1, 1fr);
+	}
+	.zom-app {
+		padding-left: 20px;
+		padding-right: 20px;
+		flex-direction: column;
+	}
+	.zom-app .zom-app-right {
+	margin-left: 20px;
+	width: 100%;
+	}
+	.restraunt-chains {
+	grid-template-columns: repeat(3, 1fr);
+	}
+    .footer-bar .footer-lang {
+        flex-direction: column;
+    }
+
+    .footer-bar .footer-lang .btn-lang-top {
+        margin-top: 20px;
+    }
+
+	.footer-links {
+	grid-template-columns: repeat(2, 1fr);
+	}
+	.footer-bar .footer-last-links {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	}
+	.footer-bar .footer-last-links h4.footer-list-title {
+		margin-top: 20px;
+	}
+}
+    </style>
+</html>
+
