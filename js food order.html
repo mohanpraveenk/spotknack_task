@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Food Ordering Page</title>
+	<style>
+		body {
+			background-color: #ff000081;
+			font-family: Arial, sans-serif;
+		}
+		
+		h1 {
+			text-align: center;
+			color: #333333;
+			margin-top: 50px;
+            box-shadow: 0 2px 5px rgb(252, 5, 5);
+            background-color: whitesmoke;
+		}
+		
+		form {
+			width: 400px;
+			margin: 0 auto;
+			background-color: #ffffff;
+			padding: 20px;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+			border-radius: 5px;
+			margin-top: 30px;
+		}
+		
+		label {
+			display: inline-block;
+			margin-bottom: 10px;
+		}
+		
+		input[type="number"], button {
+			padding: 10px;
+			border-radius: 5px;
+			border: none;
+			margin-bottom: 20px;
+		}
+		
+		button {
+			background-color: #32af36;
+			color: #ffffff;
+			font-size: 16px;
+			cursor: pointer;
+		}
+		
+		button:hover {
+			background-color: #1ea323;
+		}
+		
+		#total-price {
+			font-size: 24px;
+			color: #333333;
+			font-weight: bold;
+		}
+		
+		img {
+			display: block;
+			margin: 0 auto;
+			margin-top: 50px;
+			max-width: 400px;
+			height: auto;
+		}
+	</style>
+	<script>
+		function calculateTotal() {
+			var quantity = document.getElementById("quantity").value;
+			var price = document.getElementById("price").value;
+			var total = quantity * price;
+			document.getElementById("total-price").innerHTML = "$" + total.toFixed(2);
+		}
+	</script>
+</head>
+<body>
+	<h1>Food Ordering Page</h1>
+	<img src="C:\Users\MOHAN PRAVEEN K\Downloads\pexels-photo-3727250.jpeg" alt="Food image">
+	<form>
+		<label for="quantity">Quantity:</label>
+		<input type="number" id="quantity" name="quantity" value="1" min="1" max="100">
+		<label for="price">Price:</label>
+		<input type="number" id="price" name="price" value="10.00" min="0.01" step="0.01">
+		<center><button type="button" onclick="calculateTotal()">Calculate Total</button></center>
+	</form>
+	<center><p>Total Price: <span id="total-price">$10.00</span></p></center>
+	
+</body>
+</html>
